@@ -1,9 +1,16 @@
 :root {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(94, 189, 189);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
 }
 
 h1 {
@@ -11,18 +18,15 @@ h1 {
 }
 
 .container {
-  padding: 50px;
-  width: 100vw;
-  height: 100vh;
+  padding: 25px;
+  height: 100%;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  gap: 10px;
+  grid-template-rows: repeat(auto-fit, 25%);
+  grid-template-columns: repeat(auto-fit, 22%);
+  justify-content: center;
+  gap: 15px;
 }
 
 .book {
   border: 2px solid pink;
-  width: 100%;
-  height: 100%;
 }
