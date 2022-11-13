@@ -13,8 +13,8 @@ body {
   grid-template-rows: 1fr 8fr 1fr;
 }
 
-h1 {
-  text-align: center;
+header > h1 {
+  font-size: 3rem;
 }
 
 .container {
@@ -24,9 +24,29 @@ h1 {
   grid-template-rows: repeat(auto-fit, 25%);
   grid-template-columns: repeat(auto-fit, 22%);
   justify-content: center;
+  align-content: center;
   gap: 15px;
+  background-color: rgb(211, 162, 147);
 }
 
 .book {
-  border: 2px solid pink;
+  border: 2px solid rgb(88, 69, 180);
+}
+
+footer {
+  background-color: rgb(72, 101, 91);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background-color: rgb(71, 93, 93);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > p {
+  font-size: 1.25rem;
 }
